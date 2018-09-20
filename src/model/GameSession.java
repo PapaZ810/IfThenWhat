@@ -11,7 +11,7 @@ public class GameSession
 	 * used for later customization
 	 */
 
-	public GameSession()
+ 	public GameSession()
 	{
 		this.name = "unnamed game session";
 		this.timeMinutes = -99;
@@ -19,6 +19,8 @@ public class GameSession
 		this.inGameKills = -99;
 	}
 	
+ 	
+ 	
 	public GameSession(String name)
 	{
 		this.name = name;
