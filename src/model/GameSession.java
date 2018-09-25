@@ -66,6 +66,12 @@ public class GameSession
 		this.inGameKills = inGameKills;
 	}
 	
+	public String toString()
+	{
+		String description = "";
+		
+		return description;
+	}
 	
 }
 

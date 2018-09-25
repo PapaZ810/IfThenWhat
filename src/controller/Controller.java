@@ -9,7 +9,6 @@ public class Controller
 	 * Builds the instance
 	 */
 	
-	private JOptionPane userInput;
 	private GameSession userSession;
 	
 	private void looper()
@@ -40,8 +39,7 @@ public class Controller
 	 */
 	public void start()
 	{
-		looper();
-		
+		looper();	
 		
 		String userInput = JOptionPane.showInputDialog(null, "How many hours did you play rounded to the nearest hour?");
 		int timeHours = -99;
@@ -67,7 +65,7 @@ public class Controller
 		}
 		userSession.setInGameKills(inGameKills);
 		
-		userInput = JOptionPane.showInputDialog(null,"");
+		userInput = JOptionPane.showInputDialog(null,"What do you want to call this session?");
 		String name = null;
 		userSession.setName(name);
 	}
