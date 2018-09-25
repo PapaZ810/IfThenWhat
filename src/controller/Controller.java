@@ -11,7 +11,7 @@ public class Controller
 	
 	private GameSession userSession;
 	
-	private void looper()
+	/**private void looper()
 	{
 		//define a variable before the loop
 		boolean isFinished = false;
@@ -29,7 +29,7 @@ public class Controller
 			}
 		}
 	}
-	
+	*/
 	public Controller()
 	{
 		
@@ -39,7 +39,7 @@ public class Controller
 	 */
 	public void start()
 	{
-		looper();	
+		//looper();	
 		
 		String userInput = JOptionPane.showInputDialog(null, "How many hours did you play rounded to the nearest hour?");
 		int timeHours = -99;
@@ -68,6 +68,9 @@ public class Controller
 		userInput = JOptionPane.showInputDialog(null,"What do you want to call this session?");
 		String name = null;
 		userSession.setName(name);
+	
+		
+		JOptionPane.showMessageDialog(null, "In your session called " + userSession.getName() + " you spent " + userSession.getTimeHours() + " hours and " + userSession.getTimeMinutes() + " minutes and killed " + userSession.getInGameKills() + "! Good job!");
 	}
 
 	public boolean validInt(String maybeInt)
