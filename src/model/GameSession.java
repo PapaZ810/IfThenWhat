@@ -7,7 +7,7 @@ public class GameSession
 	
 	/**
 	 * default constructor for GameSession
-	 * init all variables to valid but bad values
+	 * initialize all variables to valid but bad values
 	 * used for later customization
 	 */
 
@@ -20,12 +20,16 @@ public class GameSession
 	}
 	
  	
- 	
+ 	/**
 	public GameSession(String name)
 	{
 		this.name = name;
 	}
-	
+	*/
+ 	public String getName()
+	{
+		return name;
+	}
 	public int getTimeMinutes()
 	{
 		return timeMinutes;
@@ -39,11 +43,6 @@ public class GameSession
 	public int getInGameKills()
 	{
 		return inGameKills;
-	}
-	
-	public String getName()
-	{
-		return name;
 	}
 	
 	public void setName(String name)

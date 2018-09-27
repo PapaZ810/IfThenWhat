@@ -11,6 +11,7 @@ public class Controller
 	
 	private GameSession userSession;
 	
+	
 	/**private void looper()
 	{
 		//define a variable before the loop
@@ -32,7 +33,7 @@ public class Controller
 	*/
 	public Controller()
 	{
-		
+		userSession = new GameSession();
 	}
 	/**
 	 * where the program starts calling methods
@@ -66,7 +67,7 @@ public class Controller
 		userSession.setInGameKills(inGameKills);
 		
 		userInput = JOptionPane.showInputDialog(null,"What do you want to call this session?");
-		String name = null;
+		String name = userInput;
 		userSession.setName(name);
 	
 		
