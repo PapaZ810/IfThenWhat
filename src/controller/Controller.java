@@ -11,15 +11,12 @@ public class Controller
 	
 	private GameSession userSession;
 	
-	
-	/**private void looper()
+	/**
+	private void looper()
 	{
 		//define a variable before the loop
 		boolean isFinished = false;
 		int someCount = 0;
-		
-		
-		
 		while(!isFinished)
 		{
 			someCount++;
@@ -31,6 +28,7 @@ public class Controller
 		}
 	}
 	*/
+	
 	public Controller()
 	{
 		userSession = new GameSession();
@@ -38,7 +36,7 @@ public class Controller
 	/**
 	 * where the program starts calling methods
 	 */
-	public void start()
+	public void input()
 	{
 		//looper();	
 		
@@ -71,7 +69,7 @@ public class Controller
 		userSession.setName(name);
 	
 		
-		JOptionPane.showMessageDialog(null, "In your session called " + userSession.getName() + " you spent " + userSession.getTimeHours() + " hours and " + userSession.getTimeMinutes() + " minutes and killed " + userSession.getInGameKills() + "! Good job!");
+		//JOptionPane.showMessageDialog(null, "In your session called " + userSession.getName() + " you spent " + userSession.getTimeHours() + " hours and " + userSession.getTimeMinutes() + " minutes and killed " + userSession.getInGameKills() + "! Good job!");
 	}
 
 	public boolean validInt(String maybeInt)
@@ -89,4 +87,19 @@ public class Controller
 		}
 		return isValid;
 	}
+
+	public void start()
+	{
+		for (int inputLoop = 12; inputLoop >= 0; inputLoop -= 1)
+		{
+			input();
+			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + " th time you did it!");
+		}
+	}
+
+
+
+
+
 }
+

@@ -64,5 +64,19 @@ public class GameSession
 	{
 		this.inGameKills = inGameKills;
 	}
+
+	public String toString()
+	{
+		String description = "In your session called " + name + " you spent " + timeHours + " hours "
+				+ "and " + timeMinutes + " minutes and killed " + inGameKills + "! Good job!";
+		
+				
+		return description;		
+	}
+
+
+
+
+
 }
 
