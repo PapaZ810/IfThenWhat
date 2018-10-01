@@ -90,7 +90,7 @@ public class Controller
 
 	public void start()
 	{
-		for (int inputLoop = 12; inputLoop >= 0; inputLoop -= 1)
+		for (int inputLoop = 2; inputLoop >= 0; inputLoop -= 1)
 		{
 			input();
 			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + " th time you did it!");
