@@ -90,16 +90,25 @@ public class Controller
 
 	public void start()
 	{
-		for (int inputLoop = 2; inputLoop >= 0; inputLoop -= 1)
+		
+		
+		for (int inputLoop = 0; inputLoop >= 4; inputLoop++)
 		{
+			String numberSuffix = "nd";
+			
+			if (inputLoop == 1)
+				numberSuffix = "st";
+			
+			if (inputLoop == 3)
+				numberSuffix = "rd";
+			
+			if (inputLoop == 4 || inputLoop == 5 || inputLoop == 6 || inputLoop == 7 || inputLoop == 8 || inputLoop == 9 || inputLoop == 10 || inputLoop == 11 || inputLoop == 12 || inputLoop ==  13 || inputLoop == 14 || inputLoop == 15 || inputLoop == 16 || inputLoop == 17 || inputLoop == 18 || inputLoop == 19 || inputLoop == 20)
+				numberSuffix = "th";
+			
 			input();
-			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + " th time you did it!");
+			
+			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + numberSuffix + " time you did it!");
 		}
 	}
-
-
-
-
-
 }
 
