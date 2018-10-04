@@ -2,6 +2,7 @@ package controller;
 
 import model.GameSession;
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 public class Controller
 {
@@ -90,9 +91,7 @@ public class Controller
 
 	public void start()
 	{
-		
-		
-		for (int inputLoop = 0; inputLoop >= 4; inputLoop++)
+		for (int inputLoop = 1; inputLoop >= 4; inputLoop++)
 		{
 			String numberSuffix = "nd";
 			
