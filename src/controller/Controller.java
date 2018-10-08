@@ -109,5 +109,16 @@ public class Controller
 			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + numberSuffix + " time you did it!");
 		}
 	}
+	public void arrrrrrrrrrrrrrrr()
+	{
+		ArrayList<String> Stringthing = new ArrayList<String>();
+		{
+			Stringthing.add("uni");
+			Stringthing.add(2,"unimem");
+			
+			Stringthing.remove(1);
+		}
+	}
+
 }
 
