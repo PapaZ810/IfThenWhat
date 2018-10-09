@@ -111,14 +111,16 @@ public class Controller
 	}
 	public void arrrrrrrrrrrrrrrr()
 	{
-		ArrayList<String> Stringthing = new ArrayList<String>();
+		for(int arr = 0; arr >= 2; arr ++)
 		{
-			Stringthing.add("uni");
-			Stringthing.add(2,"unimem");
+			ArrayList<String> Stringthing = new ArrayList<String>();
+			{
+				Stringthing.add("uni");
+				Stringthing.add(2,"unimem");
 			
-			Stringthing.remove(1);
+				Stringthing.remove(1);
+			}
 		}
 	}
-
 }
 
