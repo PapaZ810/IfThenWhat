@@ -18,6 +18,7 @@ public class Controller
 		//define a variable before the loop
 		boolean isFinished = false;
 		int someCount = 0;
+		
 		while(!isFinished)
 		{
 			someCount++;
@@ -35,7 +36,7 @@ public class Controller
 		userSession = new GameSession();
 	}
 	/**
-	 * where the program starts calling methods
+	 * this is the input method which asks you a bunch of question about your game session
 	 */
 	public void input()
 	{
@@ -68,9 +69,6 @@ public class Controller
 		userInput = JOptionPane.showInputDialog(null,"What do you want to call this session?");
 		String name = userInput;
 		userSession.setName(name);
-	
-		
-		//JOptionPane.showMessageDialog(null, "In your session called " + userSession.getName() + " you spent " + userSession.getTimeHours() + " hours and " + userSession.getTimeMinutes() + " minutes and killed " + userSession.getInGameKills() + "! Good job!");
 	}
 
 	public boolean validInt(String maybeInt)
@@ -88,37 +86,56 @@ public class Controller
 		}
 		return isValid;
 	}
-
+	
+	/**
+	 * This is the start method of my program 
+	 * it calls the input() method and the arrrrrrrrrrrrrrrr() method 
+	 * it also has a for loop that calls the methods
+	 * inside the for loop there are if loops that change the suffix 
+	 * on the number of time you have entered you info into the input method
+	 */
+	
 	public void start()
 	{
 		for (int inputLoop = 1; inputLoop >= 4; inputLoop++)
 		{
 			String numberSuffix = "nd";
 			
-			if (inputLoop == 1)
+			if (inputLoop == 1 || inputLoop == 21)
 				numberSuffix = "st";
 			
-			if (inputLoop == 3)
+			if (inputLoop == 3 || inputLoop == 23)
 				numberSuffix = "rd";
 			
-			if (inputLoop == 4 || inputLoop == 5 || inputLoop == 6 || inputLoop == 7 || inputLoop == 8 || inputLoop == 9 || inputLoop == 10 || inputLoop == 11 || inputLoop == 12 || inputLoop ==  13 || inputLoop == 14 || inputLoop == 15 || inputLoop == 16 || inputLoop == 17 || inputLoop == 18 || inputLoop == 19 || inputLoop == 20)
+			if (inputLoop == 4 || inputLoop == 5 || inputLoop == 6 || inputLoop == 7 || inputLoop == 8 || 
+					inputLoop == 9 || inputLoop == 10 || inputLoop == 11 || inputLoop == 12 || inputLoop ==  13 || 
+					inputLoop == 14 || inputLoop == 15 || inputLoop == 16 || inputLoop == 17 || inputLoop == 18 || 
+					inputLoop == 19 || inputLoop == 20 || inputLoop == 24)
 				numberSuffix = "th";
 			
 			input();
 			
 			JOptionPane.showMessageDialog(null, "This is the " + inputLoop + numberSuffix + " time you did it!");
+		
+			arrrrrrrrrrrrrrrr();
 		}
 	}
+	
+	/**
+	this method holds the array list and a for loop for the array list
+	the list adds a uni and a unimem then removes the unimem
+	*/
+	
 	public void arrrrrrrrrrrrrrrr()
 	{
 		for(int arr = 0; arr >= 2; arr ++)
 		{
-			ArrayList<String> Stringthing = new ArrayList<String>();
+			ArrayList<String> Session = new ArrayList<String>();
 			{
-				Stringthing.add("uni");
-				Stringthing.add(2,"unimem");
+				Session.add("uni");
+				Session.add(1,"unimem");
 			
-				Stringthing.remove(1);
+				Session.remove(1);
 			}
 		}
 	}
